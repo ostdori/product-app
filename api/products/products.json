@@ -1,0 +1,68 @@
+[
+    {
+        "productId": 1,
+        "productName": "Borrmaskin AT-7",
+        "description": "Marknadens bästa budget-borr. En fröjd för ögat och själen. Kan användas även vid våtrumsarbete. Två års garanti.",
+        "inStock": true,
+        "watt": 400,
+        "weightInGram":300,
+        "manufacturer": "Toshiba",
+        "consumerPrice": 19.95,
+        "imageUrl": "./app/home/images/home3.jpeg"
+    },
+    {
+        "productId": 2,
+        "productName": "Hammare Gustav IV",
+        "description": "Frukten av långt utvecklingsarbete har lett fram till denna formfulländade hammare.",
+        "inStock": true,
+        "watt": 400,
+        "weightInGram":300,
+        "manufacturer": "Black & Decker",
+        "consumerPrice": 249,
+        "imageUrl": "./app/home/images/home3.jpeg"
+    },
+    {
+        "productId": 3,
+        "productName": "Sandblästrare ZC801E",
+        "description": "Bara det bästa är gott nog för den som kommer klassens bästa apparat, med pris från årets CEBIT-mässa.",
+        "inStock": true,
+        "watt": 1200,
+        "weightInGram":300,
+        "manufacturer": "Samsung",
+        "consumerPrice": 1249,
+        "imageUrl": "./app/home/images/home3.jpeg"
+    },
+    {
+         "productId": 4,
+        "productName": "Verktygsbälte Fredman",
+        "description": "Bälte i läder, med öljetter i mässingsimitation. 12cm striglingsyta och med fyra stora fack och tre små. Två års garanti.",
+        "inStock": true,
+        "watt": 600,
+        "weightInGram":773,
+        "manufacturer": "BOSCH",
+        "consumerPrice": 289,
+        "imageUrl": "./app/home/images/home3.jpeg"
+    },
+    {
+        "productId": 5,
+        "productName": "Vinkelslip G3",
+        "description": "En dröm att hantera, Vinkelslipen från Tyskland har tagit utlandet med storm och finns nu i Sverige. Passa på",
+        "inStock": true,
+        "watt": 600,
+        "weightInGram":8940,
+        "manufacturer": "Siemens",
+        "consumerPrice": 2699,
+        "imageUrl": "./app/home/images/home3.jpeg"
+    },
+    {
+        "productId": 6,
+        "productName": "Fogsvans UL92",
+        "description": "Handtag i PVC. Blad i rostfritt kolstål. Säkerhetsklass III. En såg som matchar dina höga behov.",
+        "inStock": false,
+        "watt": 440,
+        "weightInGram":739,
+        "manufacturer": "Electrolux",
+        "consumerPrice": 1000,
+        "imageUrl": "./app/home/images/home3.jpeg"
+    }
+]

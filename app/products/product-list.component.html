@@ -1,0 +1,62 @@
+<div class="">
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+    {{pageTitle}}
+    </div>
+
+    <!-- Search Products   -->
+    <div class='panel-body'>
+        <div class='row'>
+
+            <div class='col-md-2'>
+                Search:
+            </div>
+            <div class='col-md-4'>
+                <input type='text'  [(ngModel)] = 'filterBy' />
+            </div>
+        </div>
+        <div class='row' >
+            <div class='col-md-6'>
+                <h3> Products {{filterBy | productFilter:''}}</h3>
+            </div>
+        </div>
+
+        <div class='has-error' ></div>
+
+
+        <div class='table-responsive'>
+            <table class='table' *ngIf = 'products && products.length' >
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Watt</th>
+                        <th>Manufacturer</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor = 'let product of products | productFilter : filterBy'>
+                        <td >
+                            <img src = "{{product.imageUrl}}" [style.width.px] = 'imageWidth' [style.margin.px] = 'imageMargin' title="{{product.productName}}" *ngIf = 'imageStatus'>
+                        </td>
+                        <td>
+                            <a [routerLink] = "['/products',product.productId]">
+
+                                            {{product.productName}}
+                            
+                            </a>
+                        </td>
+                        <td>{{product.watt}}</td>
+                        <td>{{product.manufacturer }}</td>
+                        <td class="price">{{product.consumerPrice | currency:'SEK':true:'1.2-2'}}</td>
+                        <td>
+                                <button type="button" class="btn btn-default btn-lg btn-block">
+                                <i class='glyphicon glyphicon-shopping-cart'></i> Buy </button>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
